@@ -1,26 +1,26 @@
 body {
     background-color: rgb(37, 112, 137);
 }
-#content {
+ {
     max-width: 2560px
     margin: 0 auto;
     background-color: white; 
 }
 
-nav {
+{
     display: flex;
     justify-content: center;
     background-color:aliceblue;
     min-height: 10;
-}
-img{
+    }
+{
     width: 37.30212%;
     display: block;
     margin: 0 auto;
 }
 
 
- .nav_link   {
+{
     padding: 10px;
     color: rgb(9, 233, 95);
     font-size: 1.3em;

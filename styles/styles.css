@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Protest+Strike&display=swap');
 body {
     background-color: rgb(37, 112, 137);
 }
 #content {
-    max-width: 2560px
+    max-width: 2560px;
     margin: 0 auto;
     background-color: white; 
 }
@@ -11,12 +12,14 @@ nav {
     display: flex;
     justify-content: center;
     background-color:aliceblue;
-    min-height: 10;
+    min-height: 10px;
 }
 img{
     width: 37.30212%;
     display: block;
     margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 200px 10px;
 }
 
 
@@ -36,14 +39,26 @@ nav a:hover {
         color: violet
         
 }
-p {
-    text-align:center
+footer, h3 {
+    text-align:center;
 }
 
+p{
+font-family: "Protest Riot","Protest Strikes", sans-serif;
+width: 0 auto;
+margin: 0 auto;
+line-height: 1.5em;
+background-color:white;
+border: 5px solid black;
+padding: 20px;
+box-sizing: border-box;
+border-radius: 20px;
+}
 
 #main_title {
 font-size: 7em;
-text-align:center
+text-align:center;
+font-family: "Protest Riot","Protest Strikes", sans-serif;
 }
 
 #sub_title {

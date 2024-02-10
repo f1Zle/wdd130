@@ -1,22 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Roboto:wght@300&display=swap');
 #content {
     height: 200px;
     width: 50%;
     max-width: 1600px;
     margin: 0 auto;
-  }
-  nav a {
+}
+ 
+header {
+    background-color: hotpink;
+    font-family: "Merriweather", sans-serif;
+}
+    nav a {
     text-align: center;
     color: black;
     text-decoration: none;
+    padding: 35px;
   }
     nav a:hover{
         color: blue;
-}
+        background-color: hotpink;
+      }
   #hero-msg h1 {
     text-align: center;
   }
   #hero-msg h2, h4{
     text-align: center;
+    font-family: "Merriweather", sans-serif;
   }
   #hero-img{
     width: 100%;
@@ -27,23 +37,32 @@
   main section{
     text-align: center;
   }
+  main section img {
+    box-sizing: border-box;
+  }
   #background{
     height: 725px;
     background-color: hotpink;
   }
   body {
-    background-color:hotpink
+    background-color:hotpink;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
   }
-  header{
-    background-color: hotpink;
-  }
-  nav a:hover{
-    background-color: hotpink;
+  hr {
+    margin: 0;
   }
   .book, .join{
     background-color: hotpink;
     color: black;
     text-decoration: none;
+    font-family:"Roboto", sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
   .book:hover, .join:hover{
     background-color: blue;
@@ -51,17 +70,22 @@
   }
   .msg{
     background-color: hotpink;
+    padding: 35px;
   }
   .msg h2{
     color: black;
   }
   .msg p{
     color: black;
+    font-size: .8em;
+    padding-bottom: 15px;
   }
   footer{
     background-color: hotpink;
     color: black;
     text-align: left;
+    padding: 25px 50px;
+    margin-top: 200px;
   }
   footer a{
     color: black;
@@ -69,6 +93,7 @@
   }
   footer p{
     font-size: 1.2em;
+    font-family:  "Roboto", "Merriweather",  sans-serif;
   }
   footer a:hover{
     color: black;
@@ -76,9 +101,27 @@
   footer p a:hover{
     text-decoration: underline;
   }
-h4 {
+footer .social img {
+  padding-top: 15px;
+}
+  h4 {
     color: black;
 }
 .home-title{
-    color:black
+    color:black;
+    font-size: 2em;
+    font-family: "Merriweather", sans-serif;
+    margin-top: 10px;
+}
+#logo_link {
+  padding-top: 5px;
+}
+.icon {
+  padding-top: 10px;
+}
+.rivers-card, .camping-card, .rapids-card {
+  margin: 200px 0;
+}
+.card-img {
+  border: 10px solid #d9c2a3;
 }

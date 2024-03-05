@@ -2,3 +2,25 @@
 .primary {
     color: #2c03fc;
 }
+h1, h2, h3, h4 {
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  p {
+    font-family: 'Playfair Display', serif; 
+  }
+  .colors .primary {
+    background-color: #2c03fc; /* Use your primary color for the sample box */
+  }
+  
+  .colors .secondary {
+    background-color: #000; /* Use your secondary color for the sample box */
+  }
+  
+  .colors .accent1 {
+    background-color: #ff0000; /* Use your accent1 color for the sample box */
+  }
+  
+  .colors .accent2 {
+    background-color: #ffffff; /* Use your accent2 color for the sample box */
+  }

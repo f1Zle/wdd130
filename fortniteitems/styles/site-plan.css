@@ -22,5 +22,8 @@ h1, h2, h3, h4 {
   }
   
   .colors .accent2 {
-    background-color: #ffffff; /* Use your accent2 color for the sample box */
+    background-color: purple; /* Use your accent2 color for the sample box */
+  }
+  .colored {
+    color: red;
   }

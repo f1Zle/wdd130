@@ -1,0 +1,45 @@
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.menu-item {
+    margin-right: 20px; /* Adjust as needed */
+}
+
+/* Main content area */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Black bar */
+.black-bar {
+    width: 100%;
+    height: 50px; /* Adjust as needed */
+    background-color: black;
+}
+
+/* Content blocks with text-based striped pattern */
+.content-block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+.striped-pattern {
+    width: calc(50% - 10px); /* Adjust as needed, considering the gap between elements */
+    height: auto;
+    background-color: #f9f9f9;
+    color: #333; /* Text color for the striped pattern */
+    padding: 10px; /* Add padding for spacing */
+}
+
+.image-placeholder {
+    width: calc(50% - 10px); /* Adjust as needed, considering the gap between elements */
+}

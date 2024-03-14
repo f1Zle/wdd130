@@ -91,7 +91,6 @@ nav {
     margin: 0 auto;
     height: 200px;
     width: 50%;
-    max-width: auto;
     grid-row: 4;
   }
   footer a{
@@ -111,7 +110,7 @@ nav {
 footer .social img {
   padding-top: 15px;
 }
-#sociallink {
+#sociallink, #sociallink2 {
   height: 64px;
   width: 64px;
 }

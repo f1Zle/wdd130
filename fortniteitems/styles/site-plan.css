@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 .primary {
     color: #2c03fc;
 }
 h1, h2, h3, h4 {
-    font-family: 'Roboto Mono', monospace;
+    font-family:  'Roboto Mono', monospace, 'Raleway';
   }
   
   p {
-    font-family: 'Playfair Display', serif; 
+    font-family: 'Playfair Display', serif, 'Raleway';
   }
   .colors .primary {
     background-color: #2c03fc; /* Use your primary color for the sample box */
@@ -93,10 +94,7 @@ p {
 .accent2{
   background-color: var(--accent2-color);
 }
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
-}
+
 nav {
   background-color: var(--nav-background-color);
   line-height: 3em;

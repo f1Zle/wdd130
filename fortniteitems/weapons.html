@@ -14,14 +14,23 @@
                     <img class="logo" src="pics/Soldier_HID_Commando_GCGrenade_R.webp" alt="Logo">
                 </a>
                 <a href="home-page.html">Home</a>
-                <a href="weapons.html">Wepaons</a>
+                <a href="weapons.html">Weapons</a>
                 <a href="itemspage.html">Items</a>
             </nav>
-         <h1 class="home-title">fortnite weapons</h1>
+         
         </header>
-
-        <main class="river-grid">
-                <img class="card-img" id="tacsmg" src="pics/tacsmg.jpeg" alt="tacsmg">
+<h1 class="home-title">fortnite weapons</h1>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'tacsmg')">Tac SMG</button>
+            <button class="tablinks" onclick="openCity(event, 'pumpshot')">Pump Shotgun</button>
+            <button class="tablinks" onclick="openCity(event, 'sniper')">Bolt Action Sniper</button>
+            <button class="tablinks" onclick="openCity(event, 'RPG')">Rocket Launcher</button>
+            <button class="tablinks" onclick="openCity(event, 'SCAR')">SCAR</button>
+            <button class="tablinks" onclick="openCity(event, 'revolver')">Revolver</button>
+        </div>
+          
+          <div id="tacsmg" class="tabcontent">
+           <img class="card-img" id="tacsmg" src="pics/tacsmg.jpeg" alt="tacsmg">
                 <h2 id="tag1">The Tac SMG is my absolute favorite weapon in all of Fortnite.
                     Stats:
                     
@@ -43,7 +52,10 @@
                     2.2s (UNCOMMON)
                     1.9s (LEGENDARY)
                 </h2>
-                <img class="card-img" id="tacshot" src="pics/pumpshotgun.webp" alt="pumpshotgun">
+          </div>
+          
+          <div id="pumpshot" class="tabcontent">
+            <img class="card-img" id="pumpshotgun" src="pics/pumpshotgun.webp" alt="pumpshotgun">
                 <h3 id="tag2">The iconic pump shotgun was my go to back in season one, the double pump being unmatched
                     Stats:
                     
@@ -65,7 +77,10 @@
                     5.1s (COMMON)
                     3.7s (LEGENDARY)
                 </h3>
-                <img class="card-img" id="pumpshot" src="pics/bolt-action-sniper.webp" alt="sniper">
+          </div>
+          
+          <div id="sniper" class="tabcontent">
+            <img class="card-img" id="sniper" src="pics/bolt-action-sniper.webp" alt="sniper">
                 <h4 id="tag3">Snipers in any game I love, the bolt action sniper is my second favorite weapon in OG Fortnite. The one shot headshot potential was unmatched.
                     Stats:
                     
@@ -87,7 +102,10 @@
                     3.3s COMMON
                     2.5s LEGENDARY
                 </h4>
-                <img class="card-img" id="rocketlauncher" src="pics/rocket-launcher.webp" alt="RPG">
+          </div>
+
+          <div id="RPG" class="tabcontent">
+             <img class="card-img" id="rocketlauncher" src="pics/rocket-launcher.webp" alt="RPG">
                 <h5 id="tag4">The rocket launcher is in my opinion the funnest weapon to use in OG Fortnite. Shooting down a try hard with it that would crank 90s into the atmosphere with it was so satisfying.
                     Stats:
                     
@@ -109,7 +127,10 @@
                     4.68 Sec COMMON
                     2.52 Sec LEGENDARY
                 </h5>
-                <img class="card-img" id="SCAR" src="pics/SCAR.webp" alt="SCAR">
+          </div>
+          
+          <div id="SCAR" class="tabcontent">
+            <img class="card-img" id="SCAR" src="pics/SCAR.webp" alt="SCAR">
                 <h6 id="tag5">Ol' Reliable, the joy I felt when I found my first gold SCAR was unmatched, one of the best moments of my life. It will probably rival my wedding day.
                     Stats:
                     
@@ -131,7 +152,10 @@
                     2.7s (COMMON)
                     2.2s (LEGENDARY)
                 </h6>
-                <img class="card-img" id="revolver" src="pics/revolver.webp" alt="Revolver">
+          </div>
+          
+          <div id="revolver" class="tabcontent">
+            <img class="card-img" id="revolver" src="pics/revolver.webp" alt="Revolver">
                 <h7 id="tag6">Getting one taps with this thing was one of the most satisfying things ever.
                     Stats:
                     
@@ -153,21 +177,34 @@
                     2.2 Sec (COMMON)
                     1.8 Sec (LEGENDARY)
                 </h7>
-        </main>
-
+          </div>
+      
         <footer>  
-            <div class="social"></div>
             <img class="logo" src="pics/Soldier_HID_Commando_GCGrenade_R.webp" alt="Logo">
             <p><a href="site-plan.html" target="_blank">Site Plan</a></p>
-            <!-- <p class="dry">Dry Oar &copy; 2024 - Alexander Michel</p>
-            
-                    <a id="sociallink" href="http://facebook.com" target="_blank">
-                        <img src="images/facebook.png" alt="fb logo">
-                    </a>
-                    <a id="sociallink2" href="" target="_blank">
-                        <img src="" alt="Instagram logo">
-                    </a> -->
         </footer>
     </div>
+<script>
+    function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+  
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+</script>
 </body>
 </html>

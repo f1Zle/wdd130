@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Roboto:wght@300&display=swap');
-#content {
+/* #content {
  display: grid;
  grid-template-rows: 1fr 1fr;
  min-height: 100vh;
- }
+ } */
 .logo {
  height: 100px;
  width: 100px;
@@ -101,6 +101,8 @@ footer .social img {
    font-size: 2em;
    font-family: "Merriweather", sans-serif;
    margin-top: 10px;
+   grid-column: 1/3;
+   grid-row: 1/2;
 }
 .logo {
  padding-top: 5px;
@@ -110,24 +112,25 @@ footer .social img {
 .icon {
  padding-top: 10px;
 }
-.firstpic, .secondpic {
- margin: 200px 0;
 
-}
 .card-img {
- border: 10px solid #d9c2a3;
- transition: transform .5s;
- box-shadow: 5px 5px 10px #6f7364;
- width: 85%;
- margin-right: auto;
+ /* border: 10px solid #d9c2a3; */
+ box-shadow: 5px 5px 10px red;
+ width: 50%;
 
 }
 
 #tag1, #tag2, #tag3, #tag4, #tag5, #tag6 {
  color: #d9c2a3;
+ 
+
 }
 
-
+#weapons_main{
+  display:grid;
+  grid-template-columns: 1fr 5fr;
+  margin: 50px;
+}
 
 
 /* Style the tab */
@@ -135,9 +138,10 @@ footer .social img {
   float: left;
   border: 1px solid #ccc;
   background-color: red;
-  width: 30%;
-  height: 400px;
-
+  width: 100%;
+  height: 350px;
+  grid-column: 1/2;
+  grid-row: 2/3;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -166,16 +170,18 @@ footer .social img {
 
 /* Style the tab content */
 .tabcontent {
-  float: right;
+  float: left;
   padding: 0px 12px;
   border: 1px solid #ccc;
-  width: 70%;
+  width: 100%;
   border-left: none;
-  height: 700px;
-  grid-row: 4;
+  height: 100%;
+  grid-row: 2/3;
+  grid-column: 2/3;;
+  display: block;
 }
 
-#pumpshotgun, #sniper, #rocketlauncher, #SCAR, #revolver {
+/* #pumpshotgun, #sniper, #rocketlauncher, #SCAR, #revolver {
   height: 400px;
   width: 404px;
-}
+} */

@@ -95,7 +95,9 @@ footer .social img {
  height: 64px;
  width: 64px;
 }
-
+#p {
+  color: red;
+}
 .home-title{
    color:rgb(255, 255, 255);
    font-size: 2em;
@@ -162,12 +164,12 @@ footer .social img {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: rgb(90, 6, 247);
+  background-color: white;
 }
 
 /* Create an active/current "tab button" class */
 .tab button.active {
-  background-color: rgb(90, 6, 247);
+  background-color: white;
 }
 
 /* Style the tab content */

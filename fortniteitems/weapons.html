@@ -22,7 +22,7 @@
         <main id="weapons_main">
         <h1 class="home-title">Fortnite Weapons</h1>
         <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'tacsmg')">Tac SMG</button>
+            <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'tacsmg')">Tac SMG</button>
             <button class="tablinks" onclick="openCity(event, 'pumpshot')">Pump Shotgun</button>
             <button class="tablinks" onclick="openCity(event, 'sniper')">Bolt Action Sniper</button>
             <button class="tablinks" onclick="openCity(event, 'RPG')">Rocket Launcher</button>
@@ -33,7 +33,7 @@
           <div id="tacsmg" class="tabcontent">
            <img class="card-img" id="tacsmg_" src="pics/tacsmg.jpeg" alt="tacsmg">
                 <h3 id="tag1">The Tac SMG is my absolute favorite weapon in all of Fortnite.</h3>
-                   <p> 
+                   <p id="p"> 
                     Stats:
                     
                     DPS
@@ -61,7 +61,7 @@
             <img class="card-img" id="pumpshotgun_" src="pics/pumpshotgun.webp" alt="pumpshotgun">
                 <h3 id="tag2">The iconic pump shotgun was my go to back in season one, the double pump being unmatched
                 </h3> 
-                    <p>
+                    <p id="p">
                     Stats:
                     
                     Damage per Second
@@ -88,7 +88,7 @@
             <img class="card-img" id="sniper_" src="pics/bolt-action-sniper.webp" alt="sniper">
                 <h3 id="tag3">Snipers in any game I love, the bolt action sniper is my second favorite weapon in OG Fortnite. The one shot headshot potential was unmatched.</h3>
                     
-                    <p>
+                    <p id="p">
                      Stats:
                     DPS
                     74.25 COMMON
@@ -113,7 +113,7 @@
           <div id="RPG" class="tabcontent">
              <img class="card-img" id="rocketlauncher" src="pics/rocket-launcher.webp" alt="RPG">
                 <h3 id="tag4">The rocket launcher is in my opinion the funnest weapon to use in OG Fortnite. Shooting down a try hard with it that would crank 90s into the atmosphere with it was so satisfying.</h3>
-                    <p>
+                    <p id="p">
                     Stats:
                     
                     DPS
@@ -139,7 +139,7 @@
           <div id="SCAR" class="tabcontent">
             <img class="card-img" id="SCAR_" src="pics/SCAR.webp" alt="SCAR">
                 <h3 id="tag5">Ol' Reliable, the joy I felt when I found my first gold SCAR was unmatched, one of the best moments of my life. It will probably rival my wedding day.</h3>
-                    <p>
+                    <p id="p">
                     Stats:
                     
                     Damage per Second
@@ -167,7 +167,7 @@
                 <h3 id="tag6">
                     Getting one taps with this thing was one of the most satisfying things ever. </h3>
                    
-                    <p>
+                    <p id="p">
                     Stats:
                     
                     DPS
@@ -196,41 +196,26 @@
             <p><a href="site-plan.html" target="_blank">Site Plan</a></p>
         </footer>
     </div>
-    <script>
-        function openCity(evt, cityName) {
-    // Hide all tab content
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
+ 
 
-    // Show the current tab, and add an "active" class to the link that opened the tab
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-    }
-        
-        function openCity(evt, cityName) {
-    // Remove the active class from all tab buttons
-    var i, tablinks;
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
 
-    // Add the active class to the clicked tab button
-    evt.currentTarget.className += " active";
-
-    // Hide all tab content
-    var i, tabcontent;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-    // Show the current tab
-    document.getElementById(cityName).style.display = "block";
-    }
-    </script>
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+ 
 </body>
 </html>

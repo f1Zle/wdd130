@@ -21,7 +21,7 @@
         </header>
  <h1 class="home-title">My favorite OG Fortnite items</h1>
         <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'smokegrenade_')">Smoke Grenade</button>
+          <button class="tablinks" onclick="openCity(event, 'smokegrenade_')">Smoke Grenade</button>
             <button class="tablinks" onclick="openCity(event, 'bush_')">Bush</button>
             <button class="tablinks" onclick="openCity(event, 'slurpjuice_')">Slurp Juice</button>
             <button class="tablinks" onclick="openCity(event, 'launchpad_')">Launch Pad</button>
@@ -32,19 +32,19 @@
           </div>
           
           <!-- Tab content -->
-          <div id="smokegrenade_" class="tabcontent">
+          <div id="smokegrenade_" class="tabcontent active">
             <img class="card-img" id="smokegrenade" src="pics/smoke grenade.jpg" alt="fortnite">
-                <h2 id="tag1">The smoke albeit completely useless was cool to use.</h2>
+                <h2 id="tags">The smoke albeit completely useless was cool to use.</h2>
           </div>
           
           <div id= "bush_" class="tabcontent">
             <img class="card-img" id="bush" src="pics/bush.jpg" alt="fornitellama">
-                <h3 id="tag2">Want to camp out and watch YouTube on your phone until the end of the game? Then this is the perfect item for you!</h3>
+                <h3 id="tags">Want to camp out and watch YouTube on your phone until the end of the game? Then this is the perfect item for you!</h3>
           </div>
           
           <div id="slurpjuice_" class="tabcontent">
             <img class="card-img" id="slurpjuice" src="pics/slurpjuice.webp" alt="slupjuice">
-                <h4 id="tag3">The slurp juice in my opinion was of the best healing items in OG Fortnite.
+                <h4 id="tags">The slurp juice in my opinion was of the best healing items in OG Fortnite.
                    </h4> 
                     <p id="p">
                     Stats:
@@ -54,12 +54,12 @@
 
           <div id="launchpad_" class="tabcontent">
             <img class="card-img" id="launchpad" src="pics/launchpad.webp" alt="launchpad">
-                <h5 id="tag4">Gettting chased by a sweaty john wick? Simply place a launch pad down and escape your problems.</h5>
+                <h5 id="tags">Gettting chased by a sweaty john wick? Simply place a launch pad down and escape your problems.</h5>
           </div>
 
           <div id="spike_" class="tabcontent">
             <img class="card-img" id="spike" src="pics/damagetrap.webp" alt="spiketrap">
-                <h6 id="tag5">The spike is one of the most satisfying items to get a elmination with in the game.
+                <h6 id="tags">The spike trap is one of the most satisfying items to get an elmination with in the game.
                     </h6>
                     <p id="p">
                     Stats:
@@ -102,19 +102,22 @@ function openCity(evt, cityName) {
   // Get all elements with class="tabcontent" and hide them
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+    tabcontent[i].classList.remove("active"); // Remove the "active" class
   }
 
   // Get all elements with class="tablinks" and remove the class "active"
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tablinks[i].classList.remove("active"); // Remove the "active" class
   }
 
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
+  // Show the current tab by adding the "active" class
+  document.getElementById(cityName).classList.add("active"); // Add the "active" class
+
+  // Add the "active" class to the button that opened the tab
+  evt.currentTarget.classList.add("active");
 }
+
     </script>
 
 </body>

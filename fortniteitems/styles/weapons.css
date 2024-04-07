@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 /* #content {
  display: grid;
  grid-template-rows: 1fr 1fr;
@@ -12,7 +12,7 @@
 
 header {
  background-color: rgb(90, 6, 247);
- font-family: "Merriweather", sans-serif;
+ font-family:  'Roboto Mono', monospace, 'Raleway';
  text-align: center;
  grid-row: 1;
 }
@@ -126,7 +126,7 @@ footer .social img {
 
 #tag1, #tag2, #tag3, #tag4, #tag5, #tag6 {
  color: #d9c2a3;
- 
+ font-family: 'Playfair Display', serif, 'Raleway';
 
 }
 

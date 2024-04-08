@@ -131,13 +131,13 @@ footer .social img {
  box-shadow: 5px 5px 5px 5px red;
 }
 
-#tags {
+.tags {
  color: #d9c2a3;
  font-size: larger;
  font-family: 'Playfair Display', serif, 'Raleway';
 }
-#p {
-  color: red;
+.p {
+  color: rgba(255, 5, 5, 0.733);
 }
 
 /* Style the tab */
@@ -145,14 +145,14 @@ footer .social img {
   display: grid;
   overflow: hidden;
   border: 1px solid rgb(110, 58, 255);
-  background-color: red;
+  background-color: rgb(2, 179, 202);
   transition: 1s ease;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
-  float: center;
+  float: left;
   border: none;
   outline: none;
   cursor: pointer;

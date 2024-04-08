@@ -95,8 +95,8 @@ footer .social img {
  height: 64px;
  width: 64px;
 }
-#p {
-  color: red;
+.p {
+  color: rgba(255, 5, 5, 0.733);
 }
 .home-title{
    color:rgb(255, 255, 255);
@@ -124,7 +124,7 @@ footer .social img {
   max-height: max-content; */
 }
 
-#tag1, #tag2, #tag3, #tag4, #tag5, #tag6 {
+.tags {
  color: #d9c2a3;
  font-family: 'Playfair Display', serif, 'Raleway';
 
@@ -139,18 +139,18 @@ footer .social img {
 
 /* Style the tab */
 .tab {
+  display: grid;
   float: left;
   border: 1px solid #ccc;
-  background-color: red;
+  background-color: rgb(2, 179, 202);
   width: 100%;
-  height: 350px;
+  height: 100%;
   grid-column: 1/2;
   grid-row: 2/3;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
-  display: block;
   background-color: inherit;
   color: black;
   padding: 22px 16px;
@@ -160,6 +160,7 @@ footer .social img {
   text-align: left;
   cursor: pointer;
   transition: 0.3s;
+  font-size: large;
 }
 
 /* Change background color of buttons on hover */
@@ -175,11 +176,11 @@ footer .social img {
 /* Style the tab content */
 .tabcontent {
   float: left;
-  padding: 0px 12px;
+  padding: 10px 22px;
   border: 1px solid #ccc;
-  /* width: 100%; */
+  width: 100%;
   border-left: none;
-  /* height: 100%; */
+  height: 100%;
   grid-row: 2/3;
   grid-column: 2/3;;
   display: block;
